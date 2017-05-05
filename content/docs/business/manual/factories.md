@@ -136,6 +136,7 @@ the aggregate root holding the identity with {{< java "org.seedstack.business.do
 
 ```java
 public class SomeAggregate extends BaseAggregateRoot<UUID> {
+    @Id
     @Identity(handler = UUIDHandler.class)
     private UUID id;
     
